@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – LocalTranslate</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; }
+    header p { margin-top: 8px; color: #a1a1a6; font-size: 0.95rem; }
+    header a { color: #a1a1a6; text-decoration: none; }
+    header a:hover { color: #fff; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+    .highlight-box {
+      background: #e8f5e9;
+      border-left: 4px solid #2e7d32;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+    }
+    .highlight-box p { color: #1b5e20; font-weight: 500; font-size: 1rem; }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 36px 0 12px;
+      color: #1d1d1f;
+      border-bottom: 1px solid #e5e5ea;
+      padding-bottom: 6px;
+    }
+    p, li { font-size: 1rem; color: #3a3a3c; margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #f0f0f5;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+      color: #1d1d1f;
+    }
+    td { padding: 10px 14px; border-top: 1px solid #e5e5ea; color: #3a3a3c; }
+    .no { color: #d32f2f; font-weight: 600; }
+    .yes { color: #2e7d32; font-weight: 600; }
+    footer { text-align: center; padding: 32px 24px; font-size: 0.85rem; color: #86868b; }
+    .back { display: inline-block; margin-bottom: 24px; color: #0071e3; text-decoration: none; font-size: 0.95rem; }
+    .back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>LocalTranslate &nbsp;|&nbsp; Effective Date: January 1, 2025 &nbsp;|&nbsp; <a href="privacy_zh.html">中文版</a></p>
+</header>
+
+<main>
+
+  <a class="back" href="index.html">← Back to Support</a>
+
+  <div class="highlight-box">
+    <p>LocalTranslate uses 100% on-device AI. Your text is never sent to any server, cloud service, or third party. All translation happens locally on your iPhone or iPad.</p>
+  </div>
+
+  <h2>1. Overview</h2>
+  <p>LocalTranslate ("the App", "we", "our") is a translation application that uses a large language model (LLM) running entirely on your device. This Privacy Policy explains how the App handles your information.</p>
+  <p>We are committed to your privacy. The core design principle of LocalTranslate is that <strong>all AI processing is performed locally</strong> — no translation text, no personal data, and no usage information is ever transmitted off your device.</p>
+
+  <h2>2. No Third-Party AI Service</h2>
+  <p>LocalTranslate does <strong>not</strong> use any third-party AI or cloud translation service (such as OpenAI, Google Translate, DeepL, Azure, or any other provider). The LLM inference engine (<a href="https://github.com/ggml-org/llama.cpp" style="color:#0071e3;">llama.cpp</a>) and the model weights run entirely on your device's hardware (Apple Neural Engine / GPU / CPU).</p>
+  <p>There are no API calls to external AI services. There is no user account, no API key linked to your identity, and no backend server that receives your data.</p>
+
+  <h2>3. Data Handling Summary</h2>
+  <table>
+    <tr><th>Data type</th><th>Collected?</th><th>Sent off device?</th><th>Shared with third parties?</th></tr>
+    <tr><td>Text you input for translation</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Translation output</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Device identifiers</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Location data</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Usage analytics</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Crash reports</td><td class="yes">System-level (Apple)</td><td class="yes">Apple only (if you opt in)</td><td class="no">No</td></tr>
+  </table>
+  <p><em>Note: Crash reporting (if enabled) is handled entirely by Apple through the standard iOS crash reporting system. We do not have a separate crash reporting SDK.</em></p>
+
+  <h2>4. What the App Does with Your Text</h2>
+  <p>When you enter text for translation, the following happens entirely on your device:</p>
+  <ul>
+    <li>The text is passed to the on-device LLM inference engine (llama.cpp).</li>
+    <li>The model processes the text and generates a translation.</li>
+    <li>The result is displayed to you within the App.</li>
+  </ul>
+  <p>The text is held in memory only for the duration of the translation session and is discarded when you close or clear the translation. It is never written to persistent storage, iCloud, or any external location.</p>
+
+  <h2>5. Model Downloads</h2>
+  <p>The App may download LLM model files (GGUF format) from the internet during initial setup or when you choose to download a new model. These requests contain only standard HTTP headers — they do not include any translation text or personal information. Once downloaded, the model files are stored locally on your device and used without any further network connection.</p>
+
+  <h2>6. Network Usage</h2>
+  <p>The App does not require an internet connection to perform translations. Network access is used only for:</p>
+  <ul>
+    <li>Downloading model files (described above).</li>
+    <li>Checking for app or model updates (optional, contains no personal data).</li>
+  </ul>
+
+  <h2>7. Children's Privacy</h2>
+  <p>The App does not knowingly collect any personal information from children under the age of 13, nor from anyone of any age, as described in this policy.</p>
+
+  <h2>8. Data Retention</h2>
+  <p>Because we do not collect any personal data, there is nothing to retain or delete. Translation text exists only in your device's RAM during processing and is not persisted.</p>
+
+  <h2>9. Your Rights</h2>
+  <p>Since the App does not collect personal data, there is no personal data for us to provide, correct, or delete on your behalf. You retain full control of all data on your own device at all times.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>If we make material changes to this Privacy Policy, we will update the effective date at the top of this page. Continued use of the App after changes constitutes acceptance of the updated policy. However, our core commitment — that your translation text is never sent off your device — will not change.</p>
+
+  <h2>11. Contact</h2>
+  <p>If you have questions about this Privacy Policy, please open an issue on our GitHub repository:</p>
+  <p><a href="https://github.com/On-Device-AI-Application/translator/issues" style="color:#0071e3;">https://github.com/On-Device-AI-Application/translator/issues</a></p>
+
+</main>
+
+<footer>
+  &copy; 2025 LocalTranslate. All rights reserved.
+</footer>
+
+</body>
+</html>
